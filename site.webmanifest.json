@@ -1,0 +1,10 @@
+{
+  "artifact": "Yappy Hour Bingo public static website",
+  "version": "2.0.0",
+  "entrypoint": "index.html",
+  "authentication": false,
+  "serverSideCode": false,
+  "externalRuntimeDependencies": [],
+  "dataStorage": "browser localStorage only",
+  "requiresHttpsFor": ["service worker", "installable app experience"]
+}

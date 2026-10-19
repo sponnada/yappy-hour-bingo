@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#24305e" />
+  <meta name="robots" content="noindex" />
+  <title>Privacy · Yappy Hour Bingo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font: 16px/1.6 "Segoe UI Variable", "Segoe UI", system-ui, sans-serif; color: #172044; background: linear-gradient(145deg,#f7f7ff,#f4f8ff 55%,#fff8fb); }
+    main { width: min(100% - 32px, 720px); margin: 0 auto; padding: 48px 0; }
+    article { padding: clamp(24px,6vw,48px); border: 1px solid rgba(36,48,94,.1); border-radius: 28px; background: rgba(255,255,255,.94); box-shadow: 0 18px 50px rgba(36,48,94,.12); }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem,8vw,3.3rem); line-height: 1; letter-spacing: -.05em; }
+    h2 { margin: 28px 0 6px; font-size: 1.15rem; }
+    p { color: #5b6380; }
+    a { color: #4f46e5; font-weight: 700; text-underline-offset: 3px; }
+    .back { display: inline-block; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./index.html">← Back to the game</a>
+    <article>
+      <h1>Privacy</h1>
+      <p>Yappy Hour Bingo is a static web app. It does not require an account, sign-in, or authentication.</p>
+      <h2>What is stored</h2>
+      <p>The randomized card, first names entered on squares, and completed-line state are saved only in this browser’s local storage so progress can survive a refresh.</p>
+      <h2>What is transmitted</h2>
+      <p>The app has no backend, analytics, advertising, tracking pixels, or third-party API calls. Game entries are not transmitted by the app.</p>
+      <h2>How to remove data</h2>
+      <p>Use <strong>Clear names</strong> in the game or clear site data in the browser. Because storage is device- and browser-specific, entries do not follow a participant to another device.</p>
+      <h2>Hosting logs</h2>
+      <p>A public hosting provider may keep standard request logs under its own policies. Those logs are outside the app and do not include bingo entries stored in local storage.</p>
+    </article>
+  </main>
+</body>
+</html>
