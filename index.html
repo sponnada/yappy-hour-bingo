@@ -257,7 +257,7 @@
     .bingo-cell {
       position: relative;
       min-width: 0;
-      min-height: clamp(82px, 21vw, 154px);
+      min-height: clamp(100px, 26vw, 154px);
       padding: 9px 6px 7px;
       overflow: hidden;
       border: 1px solid rgba(79,70,229,.13);
@@ -276,15 +276,13 @@
     input:focus-visible { outline: 3px solid rgba(6,182,212,.55); outline-offset: 2px; }
 
     .prompt {
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
       font-size: clamp(.61rem, 2.6vw, .88rem);
       line-height: 1.19;
       font-weight: 700;
       letter-spacing: -.012em;
     }
+
+    .bingo-cell.completed:not(.free) { padding-bottom: 30px; }
 
     .name-chip {
       position: absolute;
@@ -466,7 +464,7 @@
       .letters, .bingo-grid { gap: 10px; }
       .letters { padding: 0 4px 10px; }
       .bingo-cell { padding: 14px 12px 10px; border-radius: 17px; }
-      .prompt { -webkit-line-clamp: 6; }
+      .bingo-cell.completed:not(.free) { padding-bottom: 42px; }
       .name-chip { left: 9px; right: 9px; bottom: 8px; padding: 6px 8px; }
     }
 
@@ -495,7 +493,7 @@
             Women of Identity
           </p>
           <h1 id="page-title">Yappy Hour Bingo</h1>
-          <p class="hero-copy">Find a different colleague for every square. Add their first name, make a connection, and get five in a row.</p>
+          <p class="hero-copy">Use first names only. Find a different colleague for every square, make a connection, and get five in a row.</p>
         </div>
         <div class="quick-guide" aria-label="How to play">
           <div class="guide-step"><strong>1 · Mingle</strong><span>Find someone who has done it.</span></div>
